@@ -1,0 +1,1838 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f8f1e8;
+    color: #4a2630;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.stars {
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+.small-text {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    margin-bottom: 22px;
+
+    opacity: 0.65;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 1.7;
+
+    font-style: italic;
+
+    margin-bottom: 45px;
+}
+
+.start-button {
+    border: 1px solid #8b5a62;
+    background: transparent;
+
+    color: #4a2630;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.start-button:hover {
+    background: #4a2630;
+    color: #f8f1e8;
+}
+
+@keyframes float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* =========================
+   THE ELDER FOUR
+========================= */
+
+.people-section {
+    min-height: 100svh;
+
+    padding: 100px 25px;
+
+    background: #fffaf4;
+
+    text-align: center;
+}
+
+.section-label {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.55;
+
+    margin-bottom: 18px;
+}
+
+.people-section h2 {
+    font-size: 40px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    max-width: 330px;
+
+    margin: 0 auto 60px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+
+    opacity: 0.75;
+}
+
+.person-card {
+    max-width: 350px;
+
+    margin: 0 auto;
+
+    padding: 45px 25px;
+
+    border: 1px solid rgba(75, 39, 48, 0.15);
+
+    border-radius: 4px;
+
+    background: #f7efe5;
+}
+
+.person-number {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.5;
+
+    margin-bottom: 25px;
+}
+
+.person-card h3 {
+    font-size: 30px;
+
+    font-weight: 500;
+
+    margin-bottom: 12px;
+}
+
+.person-role {
+    font-size: 15px;
+
+    font-style: italic;
+
+    opacity: 0.7;
+}
+
+/* =========================
+   SHIKHA DIDI
+========================= */
+
+.shikha-section {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.shikha-intro {
+    margin-bottom: 55px;
+}
+
+.shikha-intro .person-number {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.shikha-intro h3 {
+    font-size: 43px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.shikha-tagline {
+    font-size: 17px;
+    font-style: italic;
+    opacity: 0.65;
+}
+
+
+/* PHOTO COLLAGE */
+
+.shikha-photos {
+    position: relative;
+
+    min-height: 620px;
+
+    width: 100%;
+}
+
+
+/* Main photograph */
+
+.shikha-photo {
+    position: absolute;
+
+    overflow: hidden;
+
+    background: #e9ddd1;
+
+    box-shadow:
+        0 20px 45px rgba(75, 39, 48, 0.12);
+}
+
+.shikha-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.7s ease;
+}
+
+.shikha-photo:hover img {
+    transform: scale(1.04);
+}
+
+
+/* Main portrait */
+
+.main-photo {
+    width: 78%;
+    height: 390px;
+
+    top: 0;
+    left: 11%;
+
+    z-index: 2;
+}
+
+
+/* Small photo */
+
+.small-photo {
+    width: 145px;
+    height: 175px;
+
+    z-index: 3;
+}
+
+.photo-two {
+    left: 0;
+    top: 330px;
+
+    transform: rotate(-5deg);
+}
+
+.photo-three {
+    right: 0;
+    top: 365px;
+
+    transform: rotate(5deg);
+}
+
+
+/* Bottom wide photo */
+
+.wide-photo {
+    width: 72%;
+    height: 150px;
+
+    left: 14%;
+    bottom: 0;
+
+    z-index: 1;
+
+    transform: rotate(-2deg);
+}
+
+
+/* Message */
+
+.shikha-message {
+    margin-top: 45px;
+
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.shikha-message p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    opacity: 0.75;
+}
+
+.shikha-message p:last-child {
+    margin-top: 8px;
+
+    font-size: 20px;
+
+    opacity: 1;
+}
+
+/* Shikha's love note */
+
+.love-note {
+    margin-top: 55px;
+
+    padding: 35px 24px;
+
+    border-top: 1px solid rgba(75, 39, 48, 0.15);
+    border-bottom: 1px solid rgba(75, 39, 48, 0.15);
+
+    text-align: center;
+}
+
+.love-note > span {
+    font-size: 25px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.love-note h4 {
+    font-size: 22px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.love-note p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.love-note strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    font-style: italic;
+}
+
+/* =========================
+   RAKESH BHAIYA
+========================= */
+
+.rakesh-section {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.rakesh-intro {
+    margin-bottom: 45px;
+}
+
+.rakesh-intro h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.rakesh-tagline {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+
+/* Main photo */
+
+.rakesh-feature {
+    width: 88%;
+    height: 390px;
+
+    margin: 0 auto 45px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 45px rgba(75, 39, 48, 0.13);
+}
+
+.rakesh-feature img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Description */
+
+.rakesh-description {
+    padding: 0 20px;
+
+    margin-bottom: 55px;
+}
+
+.rakesh-description p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+
+    font-style: italic;
+}
+
+
+/* Plot twist */
+
+.rakesh-funny {
+    margin: 0 18px 55px;
+
+    padding: 35px 20px;
+
+    border: 1px solid rgba(75, 39, 48, 0.15);
+
+    background: #f7efe5;
+}
+
+.rakesh-funny span {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.55;
+}
+
+.rakesh-funny h4 {
+    font-size: 32px;
+
+    font-weight: 500;
+
+    margin: 18px 0;
+}
+
+.rakesh-funny p {
+    font-size: 17px;
+
+    margin-top: 8px;
+}
+
+
+/* Photos */
+
+.rakesh-photos {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 0 18px;
+
+    margin-bottom: 60px;
+}
+
+.rakesh-photo {
+    width: 50%;
+    height: 210px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 30px rgba(75, 39, 48, 0.1);
+}
+
+.rakesh-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Personal note */
+
+.rakesh-note {
+    padding: 40px 25px;
+
+    margin: 0 18px;
+
+    border-top: 1px solid rgba(75, 39, 48, 0.15);
+    border-bottom: 1px solid rgba(75, 39, 48, 0.15);
+}
+
+.rakesh-note > span {
+    font-size: 25px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.rakesh-note h4 {
+    font-size: 23px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.rakesh-note p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.rakesh-note strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    font-style: italic;
+}
+
+/* =========================
+   MITHUN BHAIYA
+========================= */
+
+.mithun-section {
+    margin-top: 120px;
+
+    text-align: center;
+}
+
+.mithun-intro {
+    padding: 0 20px;
+
+    margin-bottom: 50px;
+}
+
+.mithun-intro h3 {
+    font-size: 43px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.real-name {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    opacity: 0.5;
+
+    margin-bottom: 20px;
+}
+
+.mithun-tagline {
+    font-size: 18px;
+
+    font-style: italic;
+
+    opacity: 0.75;
+}
+
+
+/* Main photo */
+
+.mithun-main-photo {
+    width: 90%;
+
+    height: 400px;
+
+    margin: 0 auto 45px;
+
+    overflow: hidden;
+
+    border-radius: 180px 180px 5px 5px;
+
+    box-shadow:
+        0 20px 45px rgba(75, 39, 48, 0.12);
+}
+
+.mithun-main-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Description */
+
+.mithun-description {
+    padding: 0 25px;
+
+    margin-bottom: 50px;
+}
+
+.mithun-description p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+}
+
+
+/* Career card */
+
+.career-card {
+    margin: 0 18px 55px;
+
+    padding: 40px 22px;
+
+    background: #4b2730;
+
+    color: #f7efe5;
+
+    border-radius: 3px;
+}
+
+.career-card > span {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.7;
+}
+
+.career-card h4 {
+    font-size: 29px;
+
+    font-weight: 400;
+
+    margin: 22px 0 8px;
+}
+
+.career-card p {
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.career-line {
+    margin: 22px 0;
+
+    opacity: 0.6;
+}
+
+
+/* Photos */
+
+.mithun-photos {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 0 18px;
+
+    margin-bottom: 60px;
+}
+
+.mithun-photo {
+    width: 50%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    transform: rotate(-2deg);
+}
+
+.mithun-photo:nth-child(2) {
+    transform: rotate(3deg);
+}
+
+.mithun-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Personal note */
+
+.mithun-note {
+    padding: 40px 25px;
+
+    margin: 0 18px;
+
+    border-top: 1px solid rgba(75, 39, 48, 0.15);
+
+    border-bottom: 1px solid rgba(75, 39, 48, 0.15);
+}
+
+.mithun-note > span {
+    font-size: 25px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.mithun-note h4 {
+    font-size: 23px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.mithun-note p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.mithun-note strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   DHEERAJ BHAIYA
+========================= */
+
+.dheeraj-section {
+    margin-top: 120px;
+
+    text-align: center;
+}
+
+.dheeraj-intro {
+    padding: 0 20px;
+
+    margin-bottom: 50px;
+}
+
+.dheeraj-intro h3 {
+    font-size: 39px;
+
+    font-weight: 500;
+
+    margin-bottom: 12px;
+}
+
+.dheeraj-tagline {
+    font-size: 17px;
+
+    font-style: italic;
+
+    opacity: 0.7;
+}
+
+
+/* Main photo */
+
+.dheeraj-main-photo {
+    width: 86%;
+
+    height: 400px;
+
+    margin: 0 auto 45px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 50px rgba(75, 39, 48, 0.16);
+}
+
+.dheeraj-main-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Description */
+
+.dheeraj-description {
+    padding: 0 25px;
+
+    margin-bottom: 50px;
+}
+
+.dheeraj-description p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 8px;
+
+    font-style: italic;
+}
+
+.dheeraj-description strong {
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+
+/* Family helpline */
+
+.dheeraj-call {
+    margin: 0 18px 55px;
+
+    padding: 40px 20px;
+
+    border: 1px solid rgba(75, 39, 48, 0.15);
+
+    background: #fffaf4;
+}
+
+.dheeraj-call > span {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.55;
+}
+
+.dheeraj-call h4 {
+    font-size: 28px;
+
+    font-weight: 500;
+
+    margin: 20px 0 25px;
+}
+
+.dheeraj-list {
+    border-top: 1px solid rgba(75, 39, 48, 0.12);
+
+    border-bottom: 1px solid rgba(75, 39, 48, 0.12);
+
+    padding: 18px 0;
+}
+
+.dheeraj-list p {
+    font-size: 16px;
+
+    margin: 10px 0;
+}
+
+
+/* Gym warning */
+
+.gym-warning {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px dashed rgba(75, 39, 48, 0.2);
+}
+
+.gym-warning span {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.6;
+}
+
+.gym-warning p {
+    font-size: 23px;
+
+    margin: 12px 0 5px;
+}
+
+.gym-warning small {
+    font-size: 13px;
+
+    font-style: italic;
+
+    opacity: 0.65;
+}
+
+
+/* Photos */
+
+.dheeraj-photos {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 0 18px;
+
+    margin-bottom: 60px;
+}
+
+.dheeraj-photo {
+    width: 50%;
+
+    height: 230px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 35px rgba(75, 39, 48, 0.1);
+}
+
+.dheeraj-photo:first-child {
+    transform: translateY(12px);
+}
+
+.dheeraj-photo:last-child {
+    transform: translateY(-12px);
+}
+
+.dheeraj-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Personal note */
+
+.dheeraj-note {
+    padding: 40px 25px;
+
+    margin: 0 18px;
+
+    border-top: 1px solid rgba(75, 39, 48, 0.15);
+
+    border-bottom: 1px solid rgba(75, 39, 48, 0.15);
+}
+
+.dheeraj-note > span {
+    font-size: 25px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.dheeraj-note h4 {
+    font-size: 23px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.dheeraj-note p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.dheeraj-note strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   THE YOUNGER FOUR
+========================= */
+
+.younger-section {
+    margin-top: 140px;
+
+    padding: 90px 0 100px;
+
+    background: #fffaf4;
+
+    text-align: center;
+}
+
+
+/* Intro */
+
+.younger-intro {
+    padding: 0 25px;
+
+    margin-bottom: 60px;
+}
+
+.younger-intro h2 {
+    font-size: 42px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.younger-tagline {
+    font-size: 18px;
+
+    font-style: italic;
+
+    margin-bottom: 25px;
+}
+
+.younger-message {
+    max-width: 330px;
+
+    margin: auto;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    opacity: 0.7;
+}
+
+
+/* Photo gallery */
+
+.siblings-gallery {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    margin-bottom: 70px;
+}
+
+.sibling-photo {
+    height: 210px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 30px rgba(75, 39, 48, 0.1);
+}
+
+.sibling-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.sibling-photo:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Main group photo */
+
+.sibling-main {
+    grid-column: 1 / 3;
+
+    height: 350px;
+}
+
+
+/* Bottom wide photo */
+
+.sibling-wide {
+    grid-column: 1 / 3;
+
+    height: 260px;
+
+    transform: rotate(-1deg);
+}
+
+
+/* Captions */
+
+.sibling-captions {
+    padding: 0 25px;
+
+    margin-bottom: 70px;
+}
+
+.sibling-caption {
+    padding: 30px 0;
+
+    border-bottom: 1px solid rgba(75, 39, 48, 0.13);
+}
+
+.sibling-caption span {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.5;
+}
+
+.sibling-caption h3 {
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin: 10px 0 12px;
+}
+
+.sibling-caption p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+
+    opacity: 0.75;
+}
+
+
+/* Your section */
+
+.you-note {
+    margin: 0 20px 70px;
+
+    padding: 45px 25px;
+
+    background: #4b2730;
+
+    color: #f7efe5;
+
+    border-radius: 3px;
+}
+
+.you-note > span {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.6;
+}
+
+.you-note h3 {
+    font-size: 30px;
+
+    font-weight: 400;
+
+    margin: 18px 0 25px;
+}
+
+.you-main {
+    font-size: 18px;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+}
+
+.you-note p {
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.you-note strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+}
+
+
+/* Ending */
+
+.siblings-ending {
+    padding: 0 30px;
+}
+
+.siblings-ending p {
+    font-size: 18px;
+
+    font-style: italic;
+
+    line-height: 1.8;
+}
+
+.siblings-ending strong {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 21px;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   OUR FAMILY GREW
+========================= */
+
+.family-grew-section {
+    padding: 110px 0 120px;
+
+    text-align: center;
+
+    background: #f7efe5;
+}
+
+.family-grew-intro {
+    padding: 0 25px;
+
+    margin-bottom: 80px;
+}
+
+.family-grew-intro h2 {
+    font-size: 41px;
+
+    font-weight: 500;
+
+    margin: 15px 0 20px;
+}
+
+.family-grew-intro > p:last-child {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+
+    opacity: 0.7;
+}
+
+
+/* Shared */
+
+.bhabhi-section,
+.tojo-section {
+    padding: 0 18px;
+
+    margin-bottom: 100px;
+}
+
+.family-number {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.bhabhi-section h3,
+.tojo-section h3 {
+    font-size: 38px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.family-tagline {
+    max-width: 330px;
+
+    margin: 0 auto 40px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    font-style: italic;
+
+    opacity: 0.7;
+}
+
+
+/* Bhabhi main photo */
+
+.family-main-photo {
+    width: 88%;
+
+    height: 390px;
+
+    margin: 0 auto 40px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 45px rgba(75, 39, 48, 0.12);
+}
+
+.family-main-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Bhabhi message */
+
+.family-message {
+    max-width: 340px;
+
+    margin: 0 auto 45px;
+}
+
+.family-message p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+}
+
+
+/* Small photos */
+
+.family-small-photos {
+    display: flex;
+
+    gap: 14px;
+
+    padding: 0 8px;
+}
+
+.family-small-photos > div {
+    width: 50%;
+
+    height: 210px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 30px rgba(75, 39, 48, 0.1);
+}
+
+.family-small-photos img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Tojo */
+
+.tojo-section {
+    padding-top: 30px;
+}
+
+.tojo-main-photo {
+    width: 82%;
+
+    height: 360px;
+
+    margin: 0 auto 40px;
+
+    overflow: hidden;
+
+    border-radius: 150px 150px 5px 5px;
+
+    box-shadow:
+        0 20px 45px rgba(75, 39, 48, 0.13);
+}
+
+.tojo-main-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.tojo-message {
+    max-width: 340px;
+
+    margin: 0 auto 45px;
+}
+
+.tojo-message p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 14px;
+}
+
+.tojo-message strong {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    font-weight: normal;
+}
+
+
+/* Ending */
+
+.family-ending {
+    padding: 50px 25px 0;
+
+    border-top: 1px solid rgba(75, 39, 48, 0.15);
+
+    margin: 0 25px;
+}
+
+.family-ending p {
+    font-size: 18px;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+}
+
+.family-ending strong {
+    font-size: 21px;
+
+    font-weight: 500;
+
+    line-height: 1.6;
+}
+
+
+.bhabhi-special {
+    margin: 45px 20px 0;
+
+    padding: 25px 15px;
+
+    border-top: 1px dashed rgba(75, 39, 48, 0.2);
+}
+
+.bhabhi-special span {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.5;
+}
+
+.bhabhi-special p {
+    margin-top: 12px;
+
+    font-size: 18px;
+
+    font-style: italic;
+}
+
+.tojo-stats {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin: 35px 0;
+
+    padding: 20px 10px;
+
+    background: #fffaf4;
+}
+
+.tojo-stats div {
+    flex: 1;
+}
+
+.tojo-stats span {
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.5;
+
+    margin-bottom: 8px;
+}
+
+.tojo-stats strong {
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+/* =========================
+   FINAL FAMILY PHOTO
+========================= */
+
+.final-family {
+    min-height: 100svh;
+
+    padding: 120px 18px 80px;
+
+    background: #4b2730;
+
+    color: #f7efe5;
+
+    text-align: center;
+}
+
+
+/* Intro */
+
+.final-intro {
+    margin-bottom: 55px;
+}
+
+.final-intro .section-label {
+    opacity: 0.6;
+
+    color: #f7efe5;
+}
+
+.final-intro h2 {
+    font-size: 48px;
+
+    font-weight: 400;
+
+    margin: 18px 0 12px;
+}
+
+.final-intro > p:last-child {
+    font-size: 20px;
+
+    font-style: italic;
+
+    opacity: 0.8;
+}
+
+
+/* Huge family photograph */
+
+.final-photo {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.25);
+}
+
+.final-photo img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition: transform 1s ease;
+}
+
+.final-photo:hover img {
+    transform: scale(1.02);
+}
+
+
+/* Message */
+
+.final-message {
+    max-width: 350px;
+
+    margin: 55px auto 0;
+}
+
+.final-message p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    font-style: italic;
+
+    opacity: 0.8;
+
+    margin-bottom: 15px;
+}
+
+.final-message strong {
+    display: block;
+
+    margin-top: 28px;
+
+    font-size: 20px;
+
+    font-weight: 400;
+}
+
+
+/* Raksha Bandhan ending */
+
+.final-rakhi {
+    margin-top: 90px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid rgba(247, 239, 229, 0.2);
+}
+
+.final-rakhi > p {
+    font-size: 24px;
+
+    margin: 18px 0 10px;
+}
+
+.final-rakhi span {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.5;
+}
+
+
+
+
+@keyframes photoReveal {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================
+   STABLE OPENING
+========================= */
+
+.hero .stars,
+.hero .small-text,
+.hero h1,
+.hero .subtitle,
+.hero .start-button {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* =========================
+   STRONG HEADINGS
+========================= */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #4a2630;
+
+    opacity: 1;
+}
+
+.career-card h4,
+.final-family h2,
+.final-family p,
+.final-family strong {
+    color: #f7efe5;
+}
+
+
+/* =========================
+   MANUAL PHOTO POSITIONING
+========================= */
+
+/* Shikha */
+.main-photo img {
+    object-position: center center;
+}
+
+.photo-two img {
+    object-position: center center;
+}
+
+.photo-three img {
+    object-position: center center;
+}
+
+.wide-photo img {
+    object-position: center center;
+}
+
+
+/* Rakesh */
+.rakesh-feature img {
+    object-position: center center;
+}
+
+.rakesh-photo img {
+    object-position: center center;
+}
+
+
+/* Mithun */
+.mithun-main-photo img {
+    object-position: center center;
+}
+
+.mithun-photo img {
+    object-position: center center;
+}
+
+
+/* Dheeraj */
+.dheeraj-main-photo img {
+    object-position: center center;
+}
+
+.dheeraj-photo img {
+    object-position: center center;
+}
+
+
+/* Bhabhi */
+.family-main-photo img {
+    object-position: center center;
+}
+
+.family-small-photos img {
+    object-position: center center;
+}
+
+
+/* Tojo */
+.tojo-main-photo img {
+    object-position: center center;
+}
+
+
+/* Younger Four */
+.sibling-photo img {
+    object-position: center center;
+}
+
