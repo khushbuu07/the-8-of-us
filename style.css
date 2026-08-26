@@ -1134,7 +1134,7 @@ h1 {
 }
 
 
-/* Main group photo */
+/* Main group photo
 
 .sibling-main {
     grid-column: 1 / 3;
@@ -1151,7 +1151,7 @@ h1 {
     height: 260px;
 
     transform: rotate(-1deg);
-}
+} */
 
 
 /* Captions */
