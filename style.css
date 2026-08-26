@@ -414,7 +414,7 @@ h1 {
 /* Main photo */
 
 .rakesh-feature {
-    width: 88%;
+    width: 50%;
     height: 390px;
 
     margin: 0 auto 45px;
@@ -427,7 +427,7 @@ h1 {
 
 .rakesh-feature img {
     width: 100%;
-    height: 100%;
+    height: 150%;
 
     object-fit: cover;
 
@@ -1437,7 +1437,7 @@ h1 {
 .tojo-main-photo {
     width: 82%;
 
-    height: 360px;
+    height: 450px;
 
     margin: 0 auto 40px;
 
@@ -1781,58 +1781,58 @@ h4 {
 }
 
 .wide-photo img {
-    object-position: center center;
+    object-position: center 57%;
 }
 
 
 /* Rakesh */
 .rakesh-feature img {
-    object-position: center center;
+    object-position: center 20%;
 }
 
 .rakesh-photo img {
-    object-position: center center;
+    object-position: center 20%;
 }
 
 
 /* Mithun */
 .mithun-main-photo img {
-    object-position: center center;
+    object-position: center 67%;
 }
 
 .mithun-photo img {
-    object-position: center center;
+    object-position: center 5%;
 }
 
 
 /* Dheeraj */
 .dheeraj-main-photo img {
-    object-position: center center;
+    object-position: center 30%;
 }
 
 .dheeraj-photo img {
-    object-position: center center;
+    object-position: center 30%;
 }
 
 
 /* Bhabhi */
 .family-main-photo img {
-    object-position: center center;
+    object-position: center 25%;
 }
 
 .family-small-photos img {
-    object-position: center center;
+    object-position: center 25%;
 }
 
 
 /* Tojo */
 .tojo-main-photo img {
-    object-position: center center;
+    object-position: center 70%;
 }
 
 
 /* Younger Four */
 .sibling-photo img {
-    object-position: center center;
+    object-position: center 70%;
 }
 
