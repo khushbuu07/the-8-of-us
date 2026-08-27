@@ -1684,30 +1684,25 @@ h1 {
 
 /* Raksha Bandhan ending */
 
-.final-rakhi {
-    margin-top: 90px;
-
-    padding-top: 35px;
-
-    border-top: 1px solid rgba(247, 239, 229, 0.2);
+.rakhi-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
 }
 
-.final-rakhi > p {
-    font-size: 24px;
-
+.rakhi-title p {
     margin: 18px 0 10px;
+    font-family: "Satisfy", serif;
+    font-size: 38px;
+    font-weight: 500;
 }
 
-.final-rakhi span {
-    font-family: "Cormorant Garamond", sans-serif;
-
-    font-size: 10px;
-
-    letter-spacing: 2px;
-
-    opacity: 0.5;
+.rakhi-title span {
+    font-size: 14px;
+    opacity: 0.6;
+    animation: rakhiShimmer 2.5s ease-in-out infinite;
 }
-
 
 
 
@@ -1903,7 +1898,7 @@ h4 {
 
 .rakhi-title p {
     margin: 18px 0 10px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Satisfy", serif;
     font-size: 32px;
     font-weight: 500;
 }
